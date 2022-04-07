@@ -1,0 +1,239 @@
+.block1 {
+    
+    width: 1200px;
+    height: 800px;
+    border: 15px solid rgba(0, 0, 0, 0.3);
+    margin: 50px;
+    padding:50px;
+    background-color: aqua;
+    background-image: url("../img/6.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-origin: content-box ;
+  /*  background-size: contain;*/
+    
+}
+
+body {
+  /* background: url("../img/fon.jpg"); */
+  background-attachment: fixed;
+}
+
+.block2 {
+    width: 1200px;
+    height: 800px;
+    border: 3px solid black;
+    margin: 50px;
+    padding:50px;
+    background:
+        linear-gradient(
+          116deg,
+          hsl(284.87, 100%, 45.1%) 0%,
+          hsl(284.87, 100%, 45.1%) 16.7%,
+          hsl(277.1, 100%, 45.1%) 16.7%,
+          hsl(277.1, 100%, 45.1%) 33.3%,
+          hsl(269.32, 100%, 45.1%) 33.3%,
+          hsl(269.32, 100%, 45.1%) 50%,
+          hsl(261.55, 100%, 45.1%) 50%,
+          hsl(261.55, 100%, 45.1%) 66.7%,
+          hsl(253.77, 100%, 45.1%) 66.7%,
+          hsl(253.77, 100%, 45.1%) 83.3%,
+          hsl(246, 100%, 45.1%) 83.3%,
+          hsl(246, 100%, 45.1%) 100%
+        );
+      
+}
+
+.block3 {
+    border:5px solid black;
+    height: 400px;
+    width: 400px;
+    border-radius: 0% 100% 45% 55% / 0% 56% 44% 100%;
+    background:grey;
+    box-shadow: 0px 0px 27.4px rgba(0, 0, 0, 0.032),
+  0px 0px 46.1px rgba(0, 0, 0, 0.006),
+  0px 0px 56.3px rgba(0, 0, 0, -0.002),
+  0px 0px 59px rgba(0, 0, 0, 0.031),
+  0px 0px 58.1px rgba(0, 0, 0, 0.127),
+  0px 0px 80px rgba(0, 0, 0, 0.32)
+;
+
+}
+
+.my_img {
+    filter: blur(5px);
+    opacity: 0.9;
+}
+
+.card {
+    width: 500px;
+    margin:50px auto;
+    padding: 100px 10px;
+    border:1px solid black;
+    background-color: rgba(195, 138, 138, 0.5);
+
+    backdrop-filter: blur(10px);
+}
+.svg2 {
+    background:url("../img/svg/bell-fill.svg") no-repeat;
+    width: 100px;
+    height: 100px;
+    background-size:100%;
+}
+.svg1{
+    fill:red;
+}
+
+.svg3{
+    fill:red;
+    width: 100px;
+    transition-property: all;
+    transition-duration: 2.5s;
+    transition-delay: 3s;
+    transition-timing-function: cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.svg3:hover {
+  fill:orange;
+  width: 150px;
+}
+
+.svg4{
+  font-size: 100px;
+  color:green;
+}
+
+.btn {
+  padding: 5px 25px;
+  background:lightcoral;
+  box-shadow:
+  0px 0px 2.2px rgba(0, 0, 0, 0.022),
+  0px 0px 5.3px rgba(0, 0, 0, 0.032),
+  0px 0px 10px rgba(0, 0, 0, 0.04),
+  0px 0px 17.9px rgba(0, 0, 0, 0.048),
+  0px 0px 33.4px rgba(0, 0, 0, 0.058),
+  0px 0px 80px rgba(0, 0, 0, 0.08);
+  border:none;
+  border-radius:5px;
+  text-transform: uppercase;
+  transition: all 1s ease-in;
+}  
+ .btn:hover {
+  box-shadow:
+  0px 0px 2.6px rgba(0, 0, 0, 0.31),
+  0px 0px 6.6px rgba(0, 0, 0, 0.444),
+  0px 0px 13.5px rgba(0, 0, 0, 0.556),
+  0px 0px 27.7px rgba(0, 0, 0, 0.69),
+  0px 0px 76px rgba(0, 0, 0, 1);
+
+ }  
+
+
+
+ /*--------стили меню-------------*/
+*{
+  margin: 0;
+}
+
+ .nav {
+   width: 100%;
+   height: 30px;
+   display: flex;
+   background:lightpink;
+   position: relative;
+   
+ }
+
+ .nav, .nav ul {
+  padding-left:0 ;
+  list-style: none ;
+ }
+
+ .nav li a {
+   text-decoration: none;
+   color: darkred;
+   padding: 5px;
+   margin-right:10px ;
+   transition: all 0.5s;
+ }
+ .nav li a:hover {
+   text-decoration: underline;
+ }
+
+ .drop-menu>ul {
+   top:-50px;
+   position: absolute;
+   z-index: -1;
+   background:lightpink;
+   border: 1px solid darkred;
+   border-radius: 5px;
+   opacity: 0;
+   transition: all 3s ease-in;
+ }
+ .drop-menu:hover>ul {
+   opacity: 1;
+   background:red;
+   top:30px;
+ }
+
+ .drop-menu li {
+   border-bottom: darkred 1px dashed;
+ }
+
+ .drop-menu li:last-child {
+   border-bottom:none;
+ }
+
+
+ .block {
+   width: 100px;
+   height: 100px;
+   background: green;
+   margin: 100px;
+   transition: all 1s;
+ }
+ .block:hover {
+    transform: perspective(60px) rotateX(45deg) ;
+ }
+
+@keyframes animaition-circle{
+  0% {
+    transform: translate(0);
+    background-color:darkred;
+  }
+  50%{
+    transform: translate(300px);    
+  }
+  75%{
+    transform: translate(300px, -100px);
+    background-color:red;
+  }
+  100%{
+    transform: translate(300px, 0);
+    background-color:violet;
+  }
+}
+
+
+
+ .circle {
+   background-color:darkred;
+   height: 100px;
+   width: 100px;
+   border-radius:50%;
+   margin: 100px auto;
+   animation: animaition-circle 5s infinite alternate;
+   animation-play-state: paused;
+  }
+
+
+  .circle:hover {
+    animation-play-state: paused;
+  }
+
+#run:checked+.circle{
+  animation-play-state:running;
+}
+
+.text{
+  margin: 200px;
+}
